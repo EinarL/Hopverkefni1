@@ -1,0 +1,27 @@
+{
+  "name": "hopverkefni1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "browser-sync": "browser-sync start --server --files index.html style.css",
+    "sass": "sass styles.scss styles.css",
+    "sass-watch": "sass --watch styles.scss styles.css",
+    "dev": "concurrently npm:sass-watch npm:browser-sync",
+    "lint-css": "stylelint styles.css",
+    "lint": "stylelint styles.scss --syntax scss"
+  },
+  "author": "Einar",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.27.5",
+    "concurrently": "^6.2.2",
+    "stylelint": "^13.13.1",
+    "stylelint-config-sass-guidelines": "^8.0.0",
+    "stylelint-config-standard": "^22.0.0"
+  },
+  "dependencies": {
+    "dart-sass": "^1.25.0"
+  }
+}
