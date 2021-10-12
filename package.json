@@ -7,10 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "browser-sync": "browser-sync start --server --files index.html style.css",
     "sass": "sass styles.scss styles.css",
-    "sass-watch": "sass --watch styles.scss styles.css",
+    "sass-watch": "sass --watch ./styles/styles.scss styles.css",
     "dev": "concurrently npm:sass-watch npm:browser-sync",
     "lint-css": "stylelint styles.css",
-    "lint": "stylelint styles.scss --syntax scss"
+    "lint": "stylelint ./styles/styles.scss --syntax scss"
   },
   "author": "Einar",
   "license": "ISC",

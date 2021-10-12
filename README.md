@@ -7,7 +7,7 @@
 * styles.scss inniheldur aðallega bara @import, og sú skrá er þýdd yfir í styles.css.
 * common.scss inniheldur stíla sem allar html skrár hafa sameiginlegt.
 * config.scss inniheldur stillingar (breytur, föll, o.s.frv.). 
-* Aðrar scss skrár verða fyrir hverja html skrá.
+* Aðrar scss skrár innihalda stíla fyrir hverja html skrá (t.d. index.scss inniheldur stíla fyrir index.html).
 * Allar scss skrár verða í /styles möppunni.
 ### html
 * Allar html skrár, nema index.html, verða í /pages möppunni.
