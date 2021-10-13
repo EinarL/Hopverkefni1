@@ -1,0 +1,28 @@
+.navbar{
+  width: 100%;
+  margin: .5em .5em 0 .5em;
+  display: grid;
+  grid-template-columns: 3fr 4fr 2fr;
+
+  .main-text{
+    display: flex;
+    width:100%;
+
+  }
+
+  .main-text > *{
+    margin-right:.5em;
+  }
+
+  .content{
+    display: flex;
+    margin: auto 0;
+  }
+  .content > *{
+    margin: 0 1em;
+  }
+
+}
+
+
+

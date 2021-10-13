@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  object-fit: contain;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.navbar {
+  width: 100%;
+  margin: 0.5em 0.5em 0 0.5em;
+  display: grid;
+  grid-template-columns: 3fr 4fr 2fr;
+}
+.navbar .main-text {
+  display: flex;
+  width: 100%;
+}
+.navbar .main-text > * {
+  margin-right: 0.5em;
+}
+.navbar .content {
+  display: flex;
+  margin: auto 0;
+}
+.navbar .content > * {
+  margin: 0 1em;
+}
+
+/*# sourceMappingURL=styles.css.map */
