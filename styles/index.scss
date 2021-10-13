@@ -1,5 +1,6 @@
 .navbar{
-  position: relative;
+  position: absolute;
+  z-index: 1;
   width: calc(100% - 1em);
   margin: .5em .5em 0 .5em;
   display: grid;
@@ -12,7 +13,7 @@
   .main-text > *{
     margin-right:.5em;
   }
-  .text{ /* Tæknibúðin textinn*/
+  .text{ /* Tæknibúðin textinn */
     font-size: 40px;
     line-height: 30px;
     position: absolute;
@@ -34,20 +35,24 @@
   #search-form{
     display: flex;
     margin-right: 1.6em;
-
-    #search-bar{
-      width: 30em;
-      height: 2.5em;
-    }
-    img{
-      width:20px;
-      margin-left: -1.6em;
-    }
-
   }
+  #search-bar{
+    width: 30em;
+    height: 2.5em;
+  }
+  .magnifying-glass-img{
+    width:20px;
+    margin-left: -1.6em;
+  }
+}
 
-
-
+.backgr-img{
+  clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
+  position: relative;
+  width:100%;
+  object-fit: cover;
+  height: 35em;
+  opacity: 60%;
 }
 
 

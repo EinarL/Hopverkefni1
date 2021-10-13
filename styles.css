@@ -28,7 +28,8 @@ input[type=search]::-webkit-search-cancel-button {
 }
 
 .navbar {
-  position: relative;
+  position: absolute;
+  z-index: 1;
   width: calc(100% - 1em);
   margin: 0.5em 0.5em 0 0.5em;
   display: grid;
@@ -42,7 +43,7 @@ input[type=search]::-webkit-search-cancel-button {
   margin-right: 0.5em;
 }
 .navbar .text {
-  /* Tæknibúðin textinn*/
+  /* Tæknibúðin textinn */
   font-size: 40px;
   line-height: 30px;
   position: absolute;
@@ -65,13 +66,22 @@ input[type=search]::-webkit-search-cancel-button {
   display: flex;
   margin-right: 1.6em;
 }
-.navbar #search-form #search-bar {
+.navbar #search-bar {
   width: 30em;
   height: 2.5em;
 }
-.navbar #search-form img {
+.navbar .magnifying-glass-img {
   width: 20px;
   margin-left: -1.6em;
+}
+
+.backgr-img {
+  clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
+  position: relative;
+  width: 100%;
+  object-fit: cover;
+  height: 35em;
+  opacity: 60%;
 }
 
 /*# sourceMappingURL=styles.css.map */
