@@ -25,7 +25,6 @@ a {
 .navbar .main-text {
   display: flex;
   width: 100%;
-  border: solid 1px black;
 }
 .navbar .main-text > * {
   margin-right: 0.5em;
@@ -34,13 +33,8 @@ a {
   display: flex;
   margin: auto 0;
 }
-.navbar img {
-  justify-content: end;
-  border: 1px solid black;
-}
-
-.navbar > * {
-  border: 1px solid black;
+.navbar .content > * {
+  margin: 0 1em;
 }
 
 /*# sourceMappingURL=styles.css.map */
