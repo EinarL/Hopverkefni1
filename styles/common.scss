@@ -3,6 +3,11 @@
   padding: 0;
 }
 
+body{
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
 img{
   object-fit: contain;
 }
@@ -14,4 +19,9 @@ li{
 a{
   text-decoration: none;
   color: #000;
+}
+
+input[type="search"]::-webkit-search-cancel-button{
+  /* removar 'x' takkann frá search bars */
+  -webkit-appearance:none;
 }

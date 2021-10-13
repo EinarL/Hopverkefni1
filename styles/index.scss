@@ -1,19 +1,24 @@
 .navbar{
-  width: 100%;
+  position: relative;
+  width: calc(100% - 1em);
   margin: .5em .5em 0 .5em;
   display: grid;
-  grid-template-columns: 3fr 4fr 2fr;
+  grid-template-columns: 2fr 1fr 2fr 1fr;
 
   .main-text{
     display: flex;
     width:100%;
-
   }
-
   .main-text > *{
     margin-right:.5em;
   }
-
+  .text{ /* Tæknibúðin textinn*/
+    font-size: 40px;
+    line-height: 30px;
+    position: absolute;
+    bottom: 0;
+    margin-left: 1em;
+  }
   .content{
     display: flex;
     margin: auto 0;
@@ -21,6 +26,27 @@
   .content > *{
     margin: 0 1em;
   }
+  .cart-img > *{
+    position: absolute;
+    bottom: 0;
+    right:0;
+  }
+  #search-form{
+    display: flex;
+    margin-right: 1.6em;
+
+    #search-bar{
+      width: 30em;
+      height: 2.5em;
+    }
+    img{
+      width:20px;
+      margin-left: -1.6em;
+    }
+
+  }
+
+
 
 }
 
