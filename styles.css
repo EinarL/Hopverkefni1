@@ -112,7 +112,7 @@ input [type=search]::-webkit-search-cancel-button {
   position: relative;
   display: flex;
   width: 70%;
-  margin: 10em auto;
+  margin: 15em auto 5em auto;
 }
 .container .text-container > * {
   margin-bottom: 0.5em;
@@ -136,12 +136,71 @@ input [type=search]::-webkit-search-cancel-button {
   position: absolute;
   text-transform: uppercase;
   font-size: 14px;
+  font-weight: 550;
   width: 177px;
   height: 44px;
-  bottom: 0;
   background-color: #6F4E37;
-  color: white;
+  color: #FFFFFF;
   border: 1px solid #3C2A1E;
+  box-sizing: border-box;
+  border-radius: 5px;
+  bottom: 0;
+}
+
+.brown-backgr {
+  clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+  background-color: #E1CEC2;
+  height: 30em;
+  padding: 5em 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: auto 0;
+}
+.brown-backgr .h2-container {
+  width: 70%;
+  margin: 3em auto 0 auto;
+}
+.brown-backgr h2 {
+  font-weight: 500;
+  font-size: 36px;
+}
+.brown-backgr .flex-content {
+  display: flex;
+  justify-content: space-around;
+}
+.brown-backgr section {
+  background-color: #FFFFFF;
+  width: 23%;
+  border-radius: 5px;
+  height: fit-content;
+}
+.brown-backgr .extra-space {
+  margin: 0.7em;
+}
+.brown-backgr .extra-space > *:not(.no-margin) {
+  margin-bottom: 0.3em;
+}
+.brown-backgr .item-main-text {
+  font-size: 22px;
+}
+.brown-backgr .tag-flex {
+  display: flex;
+}
+.brown-backgr .tag-flex > * {
+  margin-right: 1em;
+}
+.brown-backgr img {
+  width: 100%;
+  object-fit: cover;
+}
+.brown-backgr button {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 550;
+  width: 100%;
+  height: 44px;
+  background-color: #FEFEFE;
+  color: #3C2A1E;
+  border: 1px solid #6F4E37;
   box-sizing: border-box;
   border-radius: 5px;
 }
