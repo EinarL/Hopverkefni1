@@ -5,8 +5,8 @@
 }
 
 body {
-  max-width: 1400px;
   margin: 0 auto;
+  max-width: 1400px;
 }
 
 img {
@@ -18,22 +18,22 @@ li {
 }
 
 a {
-  text-decoration: none;
   color: #000;
+  text-decoration: none;
 }
 
-input[type=search]::-webkit-search-cancel-button {
+input [type=search]::-webkit-search-cancel-button {
   /* removar 'x' takkann frá search bars */
-  -webkit-appearance: none;
+  appearance: none;
 }
 
 .navbar {
-  position: relative;
-  z-index: 1;
-  width: calc(100% - 1em);
-  margin: 0.5em 0.5em 0 0.5em;
   display: grid;
   grid-template-columns: 2fr 1fr 3fr 1fr;
+  margin: 0.5em 0.5em 0;
+  position: relative;
+  width: calc(100% - 1em);
+  z-index: 1;
 }
 .navbar li {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -47,11 +47,11 @@ input[type=search]::-webkit-search-cancel-button {
 }
 .navbar .text {
   /* Tæknibúðin textinn */
+  bottom: 0;
   font-size: 40px;
   line-height: 30px;
-  position: absolute;
-  bottom: 0;
   margin-left: 1em;
+  position: absolute;
 }
 .navbar .content {
   display: flex;
@@ -61,50 +61,50 @@ input[type=search]::-webkit-search-cancel-button {
   margin: 0 1em;
 }
 .navbar .cart-img > * {
-  position: absolute;
   bottom: 0;
+  position: absolute;
   right: 0;
 }
-.navbar #search-form {
+.navbar .search-form {
   display: flex;
   margin-right: 1.6em;
 }
-.navbar #search-bar {
-  width: 30em;
+.navbar .search-bar {
   height: 2.5em;
+  width: 30em;
 }
 .navbar .magnifying-glass-img {
-  width: 20px;
   margin-left: -1.6em;
+  width: 20px;
 }
 
 .backgr-img {
   clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
-  position: absolute;
-  width: 1400px;
-  top: 0;
-  object-fit: cover;
   height: 35em;
+  object-fit: cover;
   opacity: 60%;
+  position: absolute;
+  top: 0;
+  width: 1400px;
   z-index: 0;
 }
 
 .front-text-container {
-  margin-top: 6em;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 6em;
 }
 .front-text-container .big-text {
+  font-size: 160px;
   font-weight: 500;
   position: relative;
-  z-index: 1;
-  font-size: 160px;
   text-align: center;
+  z-index: 1;
 }
 .front-text-container .smaller-text {
-  position: relative;
-  z-index: 1;
   font-size: 36px;
+  position: relative;
   text-align: center;
+  z-index: 1;
 }
 
 /*# sourceMappingURL=styles.css.map */

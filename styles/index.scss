@@ -1,88 +1,90 @@
-.navbar{
-  position: relative;
-  z-index: 1;
-  width: calc(100% - 1em);
-  margin: .5em .5em 0 .5em;
+.navbar {
   display: grid;
   grid-template-columns: 2fr 1fr 3fr 1fr;
+  margin: 0.5em 0.5em 0;
+  position: relative;
+  width: calc(100% - 1em);
+  z-index: 1;
 
-  li{
+  li {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
 
-  .main-text{
+  .main-text {
     display: flex;
-    width:100%;
+    width: 100%;
   }
-  .main-text > *{
-    margin-right:.5em;
+
+  .main-text > * {
+    margin-right: 0.5em;
   }
-  .text{ /* Tæknibúðin textinn */
+
+  .text { /* Tæknibúðin textinn */
+    bottom: 0;
     font-size: 40px;
     line-height: 30px;
-    position: absolute;
-    bottom: 0;
     margin-left: 1em;
+    position: absolute;
   }
-  .content{
+
+  .content {
     display: flex;
     margin: auto 0;
   }
-  .content > *{
+
+  .content > * {
     margin: 0 1em;
   }
-  .cart-img > *{
-    position: absolute;
+
+  .cart-img > * {
     bottom: 0;
-    right:0;
+    position: absolute;
+    right: 0;
   }
-  #search-form{
+
+  .search-form {
     display: flex;
     margin-right: 1.6em;
   }
-  #search-bar{
-    width: 30em;
+
+  .search-bar {
     height: 2.5em;
+    width: 30em;
   }
-  .magnifying-glass-img{
-    width:20px;
+
+  .magnifying-glass-img {
     margin-left: -1.6em;
+    width: 20px;
   }
 }
 
-.backgr-img{
+.backgr-img {
   clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
-  position: absolute;
-  width: $max-width;
-  top: 0;
-  object-fit: cover;
   height: 35em;
+  object-fit: cover;
   opacity: 60%;
+  position: absolute;
+  top: 0;
+  width: $max-width;
   z-index: 0;
 }
 
-.front-text-container{
+.front-text-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin-top: 6em;
 
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
-  .big-text{
+  .big-text {
+    font-size: 160px;
     font-weight: 500;
     position: relative;
-    z-index: 1;
-    font-size: 160px;
     text-align: center;
+    z-index: 1;
   }
 
-  .smaller-text{
-    position: relative;
-    z-index: 1;
+  .smaller-text {
     font-size: 36px;
+    position: relative;
     text-align: center;
+    z-index: 1;
   }
-
 }
-
-
-
-
