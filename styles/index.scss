@@ -1,10 +1,14 @@
 .navbar{
-  position: absolute;
+  position: relative;
   z-index: 1;
   width: calc(100% - 1em);
   margin: .5em .5em 0 .5em;
   display: grid;
-  grid-template-columns: 2fr 1fr 2fr 1fr;
+  grid-template-columns: 2fr 1fr 3fr 1fr;
+
+  li{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
 
   .main-text{
     display: flex;
@@ -48,12 +52,37 @@
 
 .backgr-img{
   clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
-  position: relative;
-  width:100%;
+  position: absolute;
+  width: $max-width;
+  top: 0;
   object-fit: cover;
   height: 35em;
   opacity: 60%;
+  z-index: 0;
 }
+
+.front-text-container{
+  margin-top: 6em;
+
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  .big-text{
+    font-weight: 500;
+    position: relative;
+    z-index: 1;
+    font-size: 160px;
+    text-align: center;
+  }
+
+  .smaller-text{
+    position: relative;
+    z-index: 1;
+    font-size: 36px;
+    text-align: center;
+  }
+
+}
+
 
 
 
