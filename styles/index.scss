@@ -93,8 +93,8 @@
 .container{
   position: relative;
   display: flex;
-  width: 70%;
-  margin: 10em auto;
+  width: $content-width;
+  margin: 15em auto 5em auto;
 
   .text-container > *{
     margin-bottom: .5em;
@@ -118,15 +118,63 @@
 
   button{
     position: absolute;
-    text-transform: uppercase;
-    font-size: 14px;
-    width: 177px;
-    height: 44px;
+    @include buttonStyle(#6F4E37,#FFFFFF,#3C2A1E,177px);
     bottom:0;
-    background-color: #6F4E37;
-    color: white;
-    border: 1px solid #3C2A1E;
-    box-sizing: border-box;
+  }
+}
+
+.brown-backgr{
+  clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+  background-color: #E1CEC2;
+  height: 30em;
+  padding: 5em 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: auto 0;
+
+  .h2-container{
+    width: $content-width;
+    margin: 3em auto 0 auto;
+  }
+
+  h2{
+    font-weight: 500;
+    font-size: 36px;
+  }
+
+  .flex-content{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  section{
+    background-color: #FFFFFF;
+    width: 23%;
     border-radius: 5px;
+    height: fit-content;
+
+  }
+  .extra-space{
+    margin: .7em;
+
+  }
+  .extra-space > *:not(.no-margin){
+    margin-bottom: .3em;
+  }
+  .item-main-text{
+    font-size: 22px;
+  }
+  .tag-flex{
+    display: flex;
+  }
+  .tag-flex > *{
+    margin-right: 1em;
+
+  }
+  img{
+    width: 100%;
+    object-fit: cover;
+  }
+  button{
+    @include buttonStyle(#FEFEFE,#3C2A1E,#6F4E37,100%);
   }
 }
