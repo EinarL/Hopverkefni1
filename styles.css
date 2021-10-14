@@ -85,7 +85,8 @@ input [type=search]::-webkit-search-cancel-button {
   opacity: 60%;
   position: absolute;
   top: 0;
-  width: 1400px;
+  width: 100%;
+  max-width: 1400px;
   z-index: 0;
 }
 
@@ -105,6 +106,44 @@ input [type=search]::-webkit-search-cancel-button {
   position: relative;
   text-align: center;
   z-index: 1;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  width: 70%;
+  margin: 10em auto;
+}
+.container .text-container > * {
+  margin-bottom: 0.5em;
+}
+.container .text-container {
+  max-width: 95%;
+}
+.container h2 {
+  font-size: 36px;
+  font-weight: 450;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.container strong {
+  font-weight: 600;
+}
+.container p {
+  font-size: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.container button {
+  position: absolute;
+  text-transform: uppercase;
+  font-size: 14px;
+  width: 177px;
+  height: 44px;
+  bottom: 0;
+  background-color: #6F4E37;
+  color: white;
+  border: 1px solid #3C2A1E;
+  box-sizing: border-box;
+  border-radius: 5px;
 }
 
 /*# sourceMappingURL=styles.css.map */
