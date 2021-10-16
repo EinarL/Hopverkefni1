@@ -94,8 +94,12 @@ input [type=search]::-webkit-search-cancel-button {
 }
 
 .front-text-container {
+  display: flex;
+  flex-direction: column;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  height: 32.5em;
+  height: 29em;
+  justify-content: center;
+  margin-bottom: 3em;
 }
 .front-text-container .big-text {
   font-size: 160px;
@@ -116,14 +120,10 @@ input [type=search]::-webkit-search-cancel-button {
   display: grid;
   gap: 2em;
   grid-template-columns: repeat(2, 1fr);
-  height: 35em;
+  height: 32em;
   margin: 0 auto;
   position: relative;
   width: 70%;
-  /*
-  .text-container {
-    max-width: 95%;
-  } */
 }
 .container .second-container {
   display: flex;
@@ -201,6 +201,7 @@ input [type=search]::-webkit-search-cancel-button {
   display: flex;
 }
 .brown-backgr img {
+  height: 10em;
   object-fit: cover;
   width: 100%;
 }
