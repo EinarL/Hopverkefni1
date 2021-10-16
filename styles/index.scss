@@ -76,7 +76,7 @@
 
 .front-text-container {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin-top: 6em;
+  height: 35em - 2.5em;
 
   .big-text {
     font-size: 160px;
@@ -95,18 +95,30 @@
 }
 
 .container {
-  display: flex;
-  margin: 15em auto 5em;
+  //display: flex;
+  align-content: center;
+  display: grid;
+  gap: 2em;
+  grid-template-columns: repeat(2, 1fr);
+  height: 35em;
+  margin: 0 auto;
   position: relative;
   width: $content-width;
+
+  .second-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 
   .text-container > * {
     margin-bottom: 0.5em;
   }
 
+  /*
   .text-container {
     max-width: 95%;
-  }
+  } */
 
   h2 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -125,9 +137,11 @@
 
   button {
     @include buttonStyle(#6F4E37,#FFFFFF,#3C2A1E,177px);
+  }
 
-    bottom: 0;
-    position: absolute;
+  img {
+    object-fit: cover;
+    width: 100%;
   }
 }
 

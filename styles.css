@@ -95,7 +95,7 @@ input [type=search]::-webkit-search-cancel-button {
 
 .front-text-container {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  margin-top: 6em;
+  height: 32.5em;
 }
 .front-text-container .big-text {
   font-size: 160px;
@@ -112,16 +112,26 @@ input [type=search]::-webkit-search-cancel-button {
 }
 
 .container {
-  display: flex;
-  margin: 15em auto 5em;
+  align-content: center;
+  display: grid;
+  gap: 2em;
+  grid-template-columns: repeat(2, 1fr);
+  height: 35em;
+  margin: 0 auto;
   position: relative;
   width: 70%;
+  /*
+  .text-container {
+    max-width: 95%;
+  } */
+}
+.container .second-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .container .text-container > * {
   margin-bottom: 0.5em;
-}
-.container .text-container {
-  max-width: 95%;
 }
 .container h2 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -146,8 +156,10 @@ input [type=search]::-webkit-search-cancel-button {
   height: 44px;
   text-transform: uppercase;
   width: 177px;
-  bottom: 0;
-  position: absolute;
+}
+.container img {
+  object-fit: cover;
+  width: 100%;
 }
 
 .brown-backgr {
