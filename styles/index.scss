@@ -125,6 +125,10 @@
 
   .tag-flex {
     display: flex;
+
+    &> *{
+      @include tagStyle(14px,.8em);
+    }
   }
 
   img {
