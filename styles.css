@@ -178,15 +178,17 @@ input [type=search]::-webkit-search-cancel-button {
   font-size: 36px;
   font-weight: 500;
 }
-.brown-backgr .flex-content {
-  display: flex;
-  justify-content: space-around;
+.brown-backgr .grid-content {
+  display: grid;
+  gap: 2em;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 0 1em;
 }
 .brown-backgr section {
   background-color: #fff;
   border-radius: 5px;
   height: fit-content;
-  width: 23%;
+  width: 100%;
 }
 .brown-backgr .extra-space {
   margin: 0.7em;
@@ -229,26 +231,26 @@ input [type=search]::-webkit-search-cancel-button {
 }
 
 .new-products-text {
-  position: relative;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-weight: 450;
   font-size: 60px;
+  font-weight: 450;
   left: 15px;
   margin: 0.5em 0;
+  position: relative;
 }
 
 .sort-by-text {
-  position: relative;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 32px;
   font-weight: 400;
   left: 15px;
+  position: relative;
 }
 
 .sort-by-container {
-  position: relative;
-  margin-bottom: 2em;
   left: 15px;
+  margin-bottom: 2em;
+  position: relative;
 }
 .sort-by-container .tag-container {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -260,17 +262,17 @@ input [type=search]::-webkit-search-cancel-button {
   border: none;
   margin-right: 0.4em;
 }
-.sort-by-container .tag-container:hover {
+.sort-by-container .tag-container :hover {
   cursor: pointer;
 }
 
 .backgr-brown {
-  background-color: #E1CEC2;
+  background-color: #e1cec2;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  padding: 2em 1em;
   gap: 2%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 2em 1em;
 }
 .backgr-brown .extra-space {
   margin: 0.7em;
