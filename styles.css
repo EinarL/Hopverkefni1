@@ -304,6 +304,7 @@ input [type=search]::-webkit-search-cancel-button {
   border-radius: 5px;
   height: fit-content;
   width: 100%;
+  margin-bottom: 2em;
 }
 .backgr-brown .item-main-text {
   font-size: 22px;
