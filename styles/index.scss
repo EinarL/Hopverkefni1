@@ -41,8 +41,9 @@
   grid-template-columns: repeat(2, 1fr);
   height: 32em;
   margin: 0 auto;
+  //max-width: $content-width;
+  max-width: min(100%, 1000px);
   position: relative;
-  width: $content-width;
 
   .second-container {
     display: flex;
@@ -79,13 +80,21 @@
   }
 }
 
+.grid-content {
+  align-content: center;
+  display: grid;
+  gap: 2em;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 0 1em;
+}
+
 .brown-backgr {
   background-color: #e1cec2;
   clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  height: 30em;
+  height: fit-content;
   margin: auto 0;
-  padding: 5em 0;
+  padding: 5em 0 10em;
 
   .h2-container {
     margin: 3em auto 0;
@@ -97,18 +106,10 @@
     font-weight: 500;
   }
 
-  .grid-content {
-    display: grid;
-    gap: 2em;
-    grid-template-columns: repeat(4, 1fr);
-    margin: 0 1em;
-  }
-
   section {
     background-color: #fff;
     border-radius: 5px;
-    height: fit-content;
-    width: 100%;
+    max-width: 100%;
   }
 
   .extra-space {
