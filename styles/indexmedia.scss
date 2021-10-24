@@ -4,11 +4,7 @@
     .big-text{
       font-size: 17vw;
     }
-
   }
-
-
-
 
   .index-footer{
     left:0;
@@ -67,6 +63,16 @@
 
   .backgr-img{
     clip-path: none;
+    height: 25em;
+  }
+
+  .front-text-container {
+    height: 20em;
+  }
+
+
+  .container {
+    height: 22em;
   }
 
   .grid-content {
@@ -75,6 +81,17 @@
 
   .brown-backgr {
     clip-path: none;
+    margin: auto 0;
+    padding: 1em 0;
+
+    .h2-container {
+      margin: 0 1em 1em;
+    }
+
+    h2{
+      text-align: left;
+      font-size: 1.5em;
+    }
 
   }
 
@@ -89,6 +106,12 @@
 
     section{
       margin: 1em 0 -1em 0;
+    }
+
+    .footer-bottom-text{
+      width:100%;
+      margin-left:-50%;
+
     }
   }
 }
