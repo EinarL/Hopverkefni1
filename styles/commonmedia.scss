@@ -1,0 +1,45 @@
+
+@media (min-width: 1081px){
+  .navbar{
+    .hamburger{
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 1080px){
+
+  .navbar {
+      grid-template-columns: minmax(270px, 2fr) 1fr 1fr 25px 25px;
+    .content {
+      display: none;
+    }
+
+    .cart-img > * {
+      bottom: 0;
+      position: absolute;
+      right: 40px;
+    }
+
+    .hamburger{
+      bottom: 2px;
+      position: absolute;
+      right: 0;
+    }
+  }
+
+
+}
+
+@media (max-width: 775px){
+  .navbar{
+    .search-form {
+      display: none;
+    }
+
+    .text { /* Tæknibúðin textinn */
+      font-size: 1.8em;
+      margin-left: 1.4em;
+    }
+  }
+}
