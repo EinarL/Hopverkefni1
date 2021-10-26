@@ -36,9 +36,9 @@
   background-color: #e1cec2;
   display: grid;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  gap: 2%;
+  gap: 0 2%;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  padding: 2em 1em;
+  padding: 2em 1em 0;
 
   .extra-space {
     margin: 0.7em;
