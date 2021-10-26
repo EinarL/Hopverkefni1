@@ -1,0 +1,70 @@
+.about-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 3em 0 0 0;
+
+  img{
+    object-fit: cover;
+    width:100%;
+  }
+
+  .second-cont{
+    margin-top: -1.2em;
+  }
+
+  .description-cont > *{
+    margin: 1em 0;
+  }
+
+  h2{
+    font-size: 3.5em;
+    font-weight: 400;
+  }
+
+  .about-text{
+    font-size: 20px;
+  }
+  .tag-flex{
+    display: flex;
+  }
+
+  .tag-cont{
+    @include tagStyle(14px,0.8em);
+  }
+
+  .item-flex{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .cost{
+    margin: auto 0;
+    font-weight: 500;
+  }
+
+  .add-to-cart{
+    @include buttonStyle(#FEFEFE,#3C2A1E,#6F4E37,330px);
+  }
+}
+
+.properties-container{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width:70%;
+  margin: 2em auto;
+
+  section{
+    margin: 2em 0 0;
+  }
+
+  h3{
+    font-size: 2em;
+    font-weight: 500;
+  }
+
+  h4{
+    font-size: 1.7em;
+    font-weight: 400;
+  }
+}
