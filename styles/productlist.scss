@@ -6,6 +6,7 @@
   left: $indent-left;
   margin: 0.5em 0;
   position: relative;
+  width: calc(100% - .3em);
 }
 
 .sort-by-text {
@@ -23,6 +24,7 @@
 
   .tag-container {
     @include tagStyle(20px,0.4em);
+    margin-bottom: .5em;
 
     & :hover {
       cursor: pointer;
