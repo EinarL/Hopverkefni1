@@ -59,12 +59,71 @@
   }
 
   h3{
-    font-size: 2em;
+    font-size: 2.3em;
     font-weight: 500;
   }
 
   h4{
-    font-size: 1.7em;
+    font-size: 2.1em;
     font-weight: 400;
+  }
+
+  p{
+    font-size: 20px;
+  }
+}
+
+.background-brown{
+  background-color: #E1CEC2;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0 1em;
+
+  h4{
+    padding: .6em 0;
+    font-size: 2.1em;
+    font-weight: 400;
+  }
+
+  .grid{
+    display: grid;
+    gap: 2em;
+    grid-template-columns: repeat(4, 1fr);
+    padding-bottom: 2em;
+  }
+
+  section {
+    background-color: #fff;
+    border-radius: 5px;
+    max-width: 100%;
+  }
+
+  .extra-space {
+    margin: 0.7em;
+  }
+
+  .extra-space > *:not(.no-margin) {
+    margin-bottom: 0.3em;
+  }
+
+  .item-main-text {
+    font-size: 22px;
+  }
+
+  .tag-flex {
+    display: flex;
+
+    & > * {
+      @include tagStyle(14px,0.8em);
+    }
+  }
+
+  img {
+    height: 10em;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  button {
+    @include buttonStyle(#FEFEFE,#3C2A1E,#6F4E37,100%);
   }
 }
