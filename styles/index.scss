@@ -144,39 +144,3 @@
   }
 }
 
-.index-footer{
-  margin-top: -5em;
-  z-index: -1;
-  background-color: #3C2A1E;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #FFF;
-  position: absolute;
-  left: calc(100% - $max-width - (100% - $max-width)/2 + 1px);
-  right: calc((100% - $max-width)/2 + 1px);
-  height: 18em;
-
-  .footer-section-container{
-    position: relative;
-    margin: 7em 1em 0 1em;
-    display: grid;
-    gap: 2em;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-
-  h2{
-    font-weight: 400;
-    text-transform: uppercase;
-    border-bottom: 2px solid #E1CEC2;
-  }
-
-  .footer-bottom-text{
-    position: absolute;
-    bottom: 0;
-    width:70%;
-    left: 50%;
-    margin-left:-35%;
-    font-size:.9em;
-    border-top: 1px solid #6F4E37;
-    text-align: center;
-  }
-}

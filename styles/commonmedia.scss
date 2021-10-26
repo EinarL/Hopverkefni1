@@ -1,4 +1,12 @@
 
+@media (max-width: 1400px){
+
+  .footer{
+    left:0;
+    right:0;
+  }
+}
+
 @media (min-width: 1081px){
   .navbar{
     .hamburger{
@@ -40,6 +48,29 @@
     .text { /* Tæknibúðin textinn */
       font-size: 1.8em;
       margin-left: 1.4em;
+    }
+  }
+}
+
+@media (max-width: 700px){
+
+  .footer{
+    position: relative;
+    margin-top: -7em;
+    height: 27em;
+
+    .footer-section-container{
+      grid-template-columns: 1fr;
+    }
+
+    section{
+      margin: 1em 0 -1em 0;
+    }
+
+    .footer-bottom-text{
+      width:100%;
+      margin-left:-50%;
+
     }
   }
 }
