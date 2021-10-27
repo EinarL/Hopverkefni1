@@ -3,7 +3,7 @@ main {
   flex-direction: column;
   margin-top: 35em;
 }
-//------------------------------------------------------
+//-------------------------------------------------------------------
 header {
   background: rgba(255, 255, 255, 0.5);
   clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
@@ -37,7 +37,7 @@ header {
   }
 
   .big-text {
-    font-size: clamp(80px, 12vw, 160px);
+    font-size: clamp(60px, 12vw, 160px);
     font-weight: bold;
     margin-bottom: 4rem;
     position: absolute;
@@ -52,7 +52,7 @@ header {
     text-align: center;
   }
 }
-//------------------------------------------------------
+//-------------------------------------------------------------------
 .container {
   align-content: center;
   display: grid;
@@ -60,7 +60,6 @@ header {
   grid-template-columns: repeat(2, 1fr);
   height: 32em;
   margin: 0 auto;
-  //max-width: $content-width;
   max-width: min(100%, 1000px);
   position: relative;
 
@@ -98,7 +97,7 @@ header {
     width: 100%;
   }
 }
-
+//-------------------------------------------------------------------
 .grid-content {
   align-content: center;
   display: grid;

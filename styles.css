@@ -35,9 +35,9 @@ input [type=search]::-webkit-search-cancel-button {
 .navbar {
   display: grid;
   grid-template-columns: minmax(270px, 2fr) 1fr 3fr 25px;
-  margin: 0.5em 0.5em 0;
-  position: relative;
-  width: calc(100% - 1em);
+  margin: 0.5em 0 0;
+  position: absolute;
+  width: min(100% - 1em, 1440px);
   z-index: 1;
 }
 .navbar li {
@@ -45,6 +45,7 @@ input [type=search]::-webkit-search-cancel-button {
 }
 .navbar .main-text {
   display: flex;
+  padding-left: 0.5em;
   width: 100%;
 }
 .navbar .tag-flex > * {
@@ -63,6 +64,8 @@ input [type=search]::-webkit-search-cancel-button {
 }
 .navbar .content {
   display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   margin: auto 0;
 }
 .navbar .content > * {
@@ -70,6 +73,7 @@ input [type=search]::-webkit-search-cancel-button {
 }
 .navbar .cart-img > * {
   bottom: 0;
+  padding-right: 0.5em;
   position: absolute;
   right: 0;
 }
@@ -182,7 +186,7 @@ header .front-text-container {
   width: 100%;
 }
 header .big-text {
-  font-size: clamp(80px, 12vw, 160px);
+  font-size: clamp(60px, 12vw, 160px);
   font-weight: bold;
   margin-bottom: 4rem;
   position: absolute;
