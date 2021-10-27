@@ -3,10 +3,12 @@
   grid-template-columns: 1fr 1fr;
   gap: 2%;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin: 3em 0 0 0;
+  margin: 3em auto 0;
+  width: 98%;
 
   img{
     object-fit: cover;
+    height:100%;
     width:100%;
   }
 
