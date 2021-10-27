@@ -1,19 +1,19 @@
-.list-container{
+.list-container {
   display: grid;
+  gap: 1em;
   grid-template-columns: 1fr;
+  margin: 2em auto 0;
   text-align: center;
   width: 90%;
-  margin: 2em auto 0;
-  gap: 1em;
 
-  a{
+  a {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 15vw;
   }
 
   .search-form {
-    width: 100%;
     display: flex;
+    width: 100%;
   }
 
   .search-bar {

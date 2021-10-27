@@ -13,18 +13,19 @@ $indent-left: 15px;
   height: 44px;
   text-transform: uppercase;
   width: $width;
-  &:hover{
+
+  &:hover {
     cursor: pointer;
   }
 }
 
 @mixin tagStyle($fontSize, $marginRight) {
-  background: #E1CEC2;
+  background: #e1cec2;
+  border: 0;
   border-radius: 5px;
-  padding: 0.5em;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: $fontSize;
   font-weight: 500;
-  border: none;
   margin-right: $marginRight;
+  padding: 0.5em;
 }

@@ -10,7 +10,7 @@
     "sass-watch": "sass --watch ./styles/styles.scss styles.css",
     "dev": "concurrently npm:sass-watch npm:browser-sync",
     "lint-css": "stylelint styles.css",
-    "lint": "stylelint ./styles/styles.scss --syntax scss"
+    "lint": "stylelint ./styles/*.scss --syntax scss"
   },
   "author": "Einar",
   "license": "ISC",

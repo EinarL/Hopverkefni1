@@ -89,13 +89,13 @@
 }
 
 .brown-backgr {
-  position: relative;
   background-color: #e1cec2;
   clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   height: fit-content;
   margin: auto 0;
   padding: 5em 0 10em;
+  position: relative;
 
   .h2-container {
     margin: 3em auto 1em;
@@ -143,4 +143,3 @@
     @include buttonStyle(#FEFEFE,#3C2A1E,#6F4E37,100%);
   }
 }
-

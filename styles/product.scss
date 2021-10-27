@@ -1,90 +1,91 @@
-.about-container{
+.about-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2%;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin: 3em 0 0 0;
+  gap: 2%;
+  grid-template-columns: 1fr 1fr;
+  margin: 3em 0 0;
 
-  img{
+  img {
     object-fit: cover;
-    width:100%;
+    width: 100%;
   }
 
-  .second-cont{
+  .second-cont {
     margin-top: -1.2em;
   }
 
-  .description-cont > *{
+  .description-cont > * {
     margin: 1em 0;
   }
 
-  h2{
+  h2 {
     font-size: 3.5em;
     font-weight: 400;
   }
 
-  .about-text{
+  .about-text {
     font-size: 20px;
   }
-  .tag-flex{
+
+  .tag-flex {
     display: flex;
   }
 
-  .tag-cont{
+  .tag-cont {
     @include tagStyle(14px,0.8em);
   }
 
-  .item-flex{
+  .item-flex {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
 
-  .cost{
-    margin: auto 0;
+  .cost {
     font-weight: 500;
+    margin: auto 0;
   }
 
-  .add-to-cart{
+  .add-to-cart {
     @include buttonStyle(#FEFEFE,#3C2A1E,#6F4E37,330px);
   }
 }
 
-.properties-container{
+.properties-container {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  width:70%;
   margin: 2em auto;
+  width: 70%;
 
-  section{
+  section {
     margin: 2em 0 0;
   }
 
-  h3{
+  h3 {
     font-size: 2.3em;
     font-weight: 500;
   }
 
-  h4{
+  h4 {
     font-size: 2.1em;
     font-weight: 400;
   }
 
-  p{
+  p {
     font-size: 20px;
   }
 }
 
-.background-brown{
-  background-color: #E1CEC2;
+.background-brown {
+  background-color: #e1cec2;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding: 0 1em;
 
-  h4{
-    padding: .6em 0;
+  h4 {
     font-size: 2.1em;
     font-weight: 400;
+    padding: 0.6em 0;
   }
 
-  .grid{
+  .grid {
     display: grid;
     gap: 2em;
     grid-template-columns: repeat(4, 1fr);

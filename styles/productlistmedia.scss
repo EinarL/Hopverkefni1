@@ -1,24 +1,18 @@
 
-@media (max-width: 1040px){
-
+@media (max-width: 1040px) {
   .backgr-brown {
     grid-template-columns: 1fr 1fr 1fr;
   }
-
 }
 
-@media (max-width: 760px){
-
+@media (max-width: 760px) {
   .backgr-brown {
     grid-template-columns: 1fr 1fr;
   }
-
 }
 
-@media (max-width: 505px){
-
+@media (max-width: 505px) {
   .backgr-brown {
     grid-template-columns: 1fr;
   }
-
 }
