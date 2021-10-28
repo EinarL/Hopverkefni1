@@ -81,7 +81,7 @@
 @media (min-width: 700px) {
   .container {
     grid-template-columns: repeat(12, 1fr);
-    margin: 0 1em;
+    margin: 2em 1em;
 
     button {
       justify-self: start;
@@ -102,12 +102,24 @@
     margin: 0 1em;
   }
 
+  header {
+    height: 26em;
+  }
+
+  main {
+    margin-top: 26em;
+  }
+
   .brown-backgr {
     padding-bottom: 2em;
   }
 }
 //---------------------------------------------------------------------
 @media (min-width: 1100px) {
+  .container {
+    margin: 7em 1em;
+  }
+
   .container-areas1 {
     grid-template-areas: '- - Q Q Q Q P P P P';
   }

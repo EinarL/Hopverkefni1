@@ -184,26 +184,20 @@ header .front-text-container {
   width: 100%;
 }
 header .big-text {
-  font-size: clamp(60px, 12vw, 160px);
+  font-size: clamp(70px, 12vw, 160px);
   font-weight: bold;
-  margin-bottom: 4rem;
+  margin-bottom: clamp(2.5rem, 8vw, 4.5rem);
   position: absolute;
   text-align: center;
 }
 header .smaller-text {
-  font-size: 36px;
+  font-size: clamp(30px, 5vw, 36px);
   font-weight: normal;
   margin-top: clamp(5rem, 12vw, 10rem);
   position: absolute;
   text-align: center;
 }
 
-.container {
-  align-content: center;
-  height: 32em;
-  max-width: 100%;
-  position: relative;
-}
 .container div {
   align-content: space-between;
   display: grid;
@@ -237,6 +231,8 @@ header .smaller-text {
   cursor: pointer;
 }
 .container img {
+  align-self: center;
+  height: 100%;
   object-fit: cover;
   width: 100%;
 }
@@ -381,7 +377,7 @@ header .smaller-text {
 @media (min-width: 700px) {
   .container {
     grid-template-columns: repeat(12, 1fr);
-    margin: 0 1em;
+    margin: 2em 1em;
   }
   .container button {
     justify-self: start;
@@ -401,11 +397,23 @@ header .smaller-text {
     margin: 0 1em;
   }
 
+  header {
+    height: 26em;
+  }
+
+  main {
+    margin-top: 26em;
+  }
+
   .brown-backgr {
     padding-bottom: 2em;
   }
 }
 @media (min-width: 1100px) {
+  .container {
+    margin: 7em 1em;
+  }
+
   .container-areas1 {
     grid-template-areas: "- - Q Q Q Q P P P P";
   }
