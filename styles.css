@@ -242,15 +242,15 @@ input [type=search]::-webkit-search-cancel-button {
     margin: 1em;
   }
 
-  header {
+  .main-page-ad {
     background: rgba(255, 255, 255, 0.5);
     height: 20em;
     max-width: 100%;
-    position: absolute;
+    position: relative;
     top: 0;
     width: 1440px;
   }
-  header .backgr-img {
+  .main-page-ad .backgr-img {
     height: 100%;
     object-fit: cover;
     opacity: 50%;
@@ -259,7 +259,7 @@ input [type=search]::-webkit-search-cancel-button {
     width: 100%;
     z-index: 0;
   }
-  header .front-text-container {
+  .main-page-ad .front-text-container {
     align-items: center;
     color: #000;
     display: flex;
@@ -270,14 +270,14 @@ input [type=search]::-webkit-search-cancel-button {
     justify-content: center;
     width: 100%;
   }
-  header .big-text {
+  .main-page-ad .big-text {
     font-size: max(clamp(50px, 15vw, 160px));
     font-weight: bold;
     margin-bottom: clamp(2.5rem, 8vw, 4.5rem);
     position: absolute;
     text-align: center;
   }
-  header .smaller-text {
+  .main-page-ad .smaller-text {
     font-size: clamp(30px, 5vw, 36px);
     font-weight: normal;
     margin-top: clamp(5rem, 12vw, 10rem);
@@ -288,7 +288,6 @@ input [type=search]::-webkit-search-cancel-button {
   main {
     display: flex;
     flex-direction: column;
-    margin-top: 20em;
   }
 
   .brown-backgr {
@@ -374,12 +373,8 @@ input [type=search]::-webkit-search-cancel-button {
     margin: 0 1em;
   }
 
-  header {
+  .main-page-ad {
     height: 26em;
-  }
-
-  main {
-    margin-top: 26em;
   }
 
   .brown-backgr {
@@ -412,13 +407,9 @@ input [type=search]::-webkit-search-cancel-button {
     grid-template-areas: "A A A B B B C C C D D D";
   }
 
-  header {
+  .main-page-ad {
     clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
     height: 35em;
-  }
-
-  main {
-    margin-top: 35em;
   }
 
   .brown-backgr {
