@@ -33,7 +33,7 @@
 .grid-area-d {
   grid-area: D;
 }
-
+//---------------------------------------------------------------------
 @media (min-width: 0) {
   .container {
     grid-template-columns: repeat(1, 1fr);
@@ -69,12 +69,15 @@
 
   .brown-backgr {
     clip-path: none;
-    padding: 5% 0;
+    height: fit-content;
+    padding-bottom: 1em;
+
+    h2 {
+      margin: 0.5rem 1rem;
+    }
   }
-
-
 }
-
+//---------------------------------------------------------------------
 @media (min-width: 700px) {
   .container {
     grid-template-columns: repeat(12, 1fr);
@@ -96,19 +99,14 @@
   .grid-content {
     grid-template-areas: 'A A A A A A B B B B B B' 'C C C C C C D D D D D D';
     grid-template-columns: repeat(12, 1fr);
-  }
-
-  /*
-  header {
-    clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
+    margin: 0 1em;
   }
 
   .brown-backgr {
-    clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0 100%);
+    padding-bottom: 2em;
   }
-  */
 }
-
+//---------------------------------------------------------------------
 @media (min-width: 1100px) {
   .container-areas1 {
     grid-template-areas: '- - Q Q Q Q P P P P';
@@ -121,7 +119,6 @@
   .grid-content {
     grid-template-areas: 'A A A B B B C C C D D D';
     grid-template-columns: repeat(12, 1fr);
-    margin: 0 1em;
   }
 
   header {
@@ -135,6 +132,14 @@
 
   .brown-backgr {
     clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0 100%);
+    padding: 10em 0;
+
+    h2 {
+      left: 16rem;
+      margin: 0;
+      position: absolute;
+      top: 5rem;
+    }
   }
 }
 
