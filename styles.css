@@ -183,10 +183,10 @@ input [type=search]::-webkit-search-cancel-button {
   grid-area: D;
 }
 
-/*--------------------------------------------------------------------
+/* --------------------------------------------------------------------
 /Þægilegt að hafa media frá 0 í stað að sleppa því vegna sér svæðis
 /fyrir grid að ofan.
-/-------------------------------------------------------------------*/
+/------------------------------------------------------------------- */
 @media (min-width: 0) {
   .container {
     grid-template-columns: repeat(1, 1fr);
@@ -245,7 +245,7 @@ input [type=search]::-webkit-search-cancel-button {
   header {
     background: rgba(255, 255, 255, 0.5);
     height: 20em;
-    left: calc(50% - 720px);
+    max-width: 100%;
     position: absolute;
     top: 0;
     width: 1440px;
@@ -256,7 +256,6 @@ input [type=search]::-webkit-search-cancel-button {
     opacity: 50%;
     position: absolute;
     top: 0;
-    width: 1440px;
     width: 100%;
     z-index: 0;
   }
@@ -272,7 +271,7 @@ input [type=search]::-webkit-search-cancel-button {
     width: 100%;
   }
   header .big-text {
-    font-size: clamp(70px, 12vw, 160px);
+    font-size: max(clamp(50px, 15vw, 160px));
     font-weight: bold;
     margin-bottom: clamp(2.5rem, 8vw, 4.5rem);
     position: absolute;

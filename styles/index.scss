@@ -22,7 +22,7 @@
 .grid-content {
   display: grid;
   gap: 2em;
-  
+
   .grid-area-a {
     grid-area: A;
   }
@@ -39,10 +39,11 @@
     grid-area: D;
   }
 }
-/*--------------------------------------------------------------------
+
+/* --------------------------------------------------------------------
 /Þægilegt að hafa media frá 0 í stað að sleppa því vegna sér svæðis
 /fyrir grid að ofan.
-/-------------------------------------------------------------------*/
+/------------------------------------------------------------------- */
 @media (min-width: 0) {
   .container {
     grid-template-columns: repeat(1, 1fr);
@@ -94,7 +95,7 @@
   header {
     background: rgba(255, 255, 255, 0.5);
     height: 20em;
-    left: calc(50% - $max-width / 2);
+    max-width: 100%;
     position: absolute;
     top: 0;
     width: $max-width;
@@ -105,7 +106,6 @@
       opacity: 50%;
       position: absolute;
       top: 0;
-      width: $max-width;
       width: 100%;
       z-index: 0;
     }
@@ -123,7 +123,7 @@
     }
 
     .big-text {
-      font-size: clamp(70px, 12vw, 160px);
+      font-size: max(clamp(50px, 15vw, 160px));
       font-weight: bold;
       margin-bottom: clamp(2.5rem, 8vw, 4.5rem);
       position: absolute;
@@ -195,6 +195,7 @@
     }
   }
 }
+
 //---------------------------------------------------------------------
 @media (min-width: 700px) {
   .container {
@@ -232,6 +233,7 @@
     padding-bottom: 2em;
   }
 }
+
 //---------------------------------------------------------------------
 @media (min-width: 900px) {
   .container-areas1 {
@@ -242,6 +244,7 @@
     grid-template-areas: '- P P P P P Q Q Q Q Q';
   }
 }
+
 //---------------------------------------------------------------------
 @media (min-width: 1100px) {
   .container {
