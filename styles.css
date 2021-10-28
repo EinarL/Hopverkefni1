@@ -157,8 +157,6 @@ main {
 
 header {
   background: rgba(255, 255, 255, 0.5);
-  clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
-  height: 35em;
   left: calc(50% - 720px);
   position: absolute;
   top: 0;
@@ -186,7 +184,7 @@ header .front-text-container {
   width: 100%;
 }
 header .big-text {
-  font-size: clamp(60px, 12vw, 160px);
+  font-size: clamp(80px, 12vw, 160px);
   font-weight: bold;
   margin-bottom: 4rem;
   position: absolute;
@@ -202,21 +200,14 @@ header .smaller-text {
 
 .container {
   align-content: center;
-  display: grid;
-  gap: 2em;
-  grid-template-columns: repeat(2, 1fr);
   height: 32em;
-  margin: 0 auto;
-  max-width: min(100%, 1000px);
+  max-width: 100%;
   position: relative;
 }
-.container .second-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.container .text-container > * {
-  margin-bottom: 0.5em;
+.container div {
+  align-content: space-between;
+  display: grid;
+  gap: 1.5em;
 }
 .container h2 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -250,26 +241,15 @@ header .smaller-text {
   width: 100%;
 }
 
-.grid-content {
-  align-content: center;
-  display: grid;
-  gap: 2em;
-  grid-template-columns: repeat(4, 1fr);
-  margin: 0 1em;
-}
-
 .brown-backgr {
   background-color: #e1cec2;
-  clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  height: fit-content;
-  margin: auto 0;
-  padding: 5em 0 10em;
   position: relative;
-}
-.brown-backgr .h2-container {
-  margin: 3em auto 1em;
-  width: 70%;
+  /*
+  .h2-container {
+    width: $content-width;
+  }
+  */
 }
 .brown-backgr h2 {
   font-size: 36px;
@@ -323,43 +303,194 @@ header .smaller-text {
   cursor: pointer;
 }
 
-@media (max-width: 1100px) {
-  /*
+.container {
+  display: grid;
+  gap: 2em;
+  height: fit-content;
+}
+.container div {
+  grid-area: Q;
+}
+.container img {
+  grid-area: P;
+}
+
+.grid-content {
+  display: grid;
+  gap: 2em;
+  height: fit-content;
+}
+
+.grid-area-a {
+  grid-area: A;
+}
+
+.grid-area-b {
+  grid-area: B;
+}
+
+.grid-area-c {
+  grid-area: C;
+}
+
+.grid-area-d {
+  grid-area: D;
+}
+
+@media (min-width: 0) {
   .container {
-    margin: 0 2em;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 1em;
   }
-  */
+  .container button {
+    justify-self: center;
+  }
+
+  .container-areas1 {
+    grid-template-areas: "Q" "P";
+  }
+
+  .container-areas2 {
+    grid-template-areas: "P" "Q";
+  }
+
   .grid-content {
-    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "A" "B" "C" "D";
+    grid-template-columns: repeat(1, 1fr);
+    margin: 1em;
+  }
+
+  header {
+    clip-path: none;
+    height: 20em;
+  }
+
+  main {
+    margin-top: 20em;
   }
 
   .brown-backgr {
-    clip-path: polygon(0 5%, 100% 0%, 100% 95%, 0% 100%);
-  }
-  .brown-backgr .h2-container {
-    width: 100%;
-  }
-  .brown-backgr h2 {
-    font-size: 4.5vw;
-    text-align: center;
+    clip-path: none;
+    padding: 5% 0;
   }
 }
-@media (max-width: 900px) {
+@media (min-width: 700px) {
   .container {
-    grid-template-columns: 1fr;
-    margin: 10em 2em;
+    grid-template-columns: repeat(12, 1fr);
+    margin: 0 1em;
   }
-  .container .second-container {
-    align-items: center;
+  .container button {
+    justify-self: start;
   }
 
-  .brown-backgr h2 {
-    font-size: 4.5vw;
+  .container-areas1 {
+    grid-template-areas: "- Q Q Q Q Q P P P P P";
+  }
+
+  .container-areas2 {
+    grid-template-areas: "- P P P P P Q Q Q Q Q";
+  }
+
+  .grid-content {
+    grid-template-areas: "A A A A A A B B B B B B" "C C C C C C D D D D D D";
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  /*
+  header {
+    clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
+  }
+
+  .brown-backgr {
+    clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0 100%);
+  }
+  */
+}
+@media (min-width: 1100px) {
+  .container-areas1 {
+    grid-template-areas: "- - Q Q Q Q P P P P";
+  }
+
+  .container-areas2 {
+    grid-template-areas: "- - P P P P Q Q Q Q";
+  }
+
+  .grid-content {
+    grid-template-areas: "A A A B B B C C C D D D";
+    grid-template-columns: repeat(12, 1fr);
+    margin: 0 1em;
+  }
+
+  header {
+    clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
+    height: 35em;
+  }
+
+  main {
+    margin-top: 35em;
+  }
+
+  .brown-backgr {
+    clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0 100%);
   }
 }
+/*
+@media (min-width: 900px) {
+  .container {
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  .container-areas1 {
+    grid-template-areas: '- - A A A A Q Q Q Q';
+  }
+
+  .container-areas2 {
+    grid-template-areas: '- - Q Q Q Q A A A A';
+  }
+}
+
+@media (max-width: 1100px) {
+  .brown-backgr {
+    //clip-path: polygon(0 5%, 100% 0%, 100% 95%, 0% 100%);
+
+    .h2-container {
+      width: 100%;
+    }
+
+    h2 {
+      font-size: 4.5vw;
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .grid-container {
+    grid-template-areas: 'A', 'B', 'C', 'D';
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .container {
+    .second-container {
+      align-items: center;
+    }
+  }
+
+  .container-areas1 {
+    grid-template-areas: 'A A A A A A A A A A A A', 'Q Q Q Q Q Q Q Q Q Q Q Q';
+  }
+
+  .brown-backgr {
+    clip-path: none;
+
+    h2 {
+      font-size: 4.5vw;
+    }
+  }
+}
+
 @media (max-width: 700px) {
   header {
-    clip-path: none;
     height: 20em;
   }
 
@@ -375,33 +506,52 @@ header .smaller-text {
     margin-top: 20em;
   }
 
+
   .container {
-    height: 22em;
+    grid-template-columns: repeat(1, 1fr);
+    height: 30em;
   }
 
+  .container-areas1 {
+    grid-template-areas: 'A', 'Q';
+  }
+
+
+
+  .container-areas2 {
+    grid-template-areas: '- - Q Q Q Q A A A A';
+  }
+
+
   .grid-content {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(1, 1fr);
   }
 
   .brown-backgr {
     clip-path: none;
     margin: auto 0;
     padding: 1em 0;
-  }
-  .brown-backgr .h2-container {
-    margin: 0 1em 1em;
-    width: calc(100% - 2.2em);
-  }
-  .brown-backgr h2 {
-    font-size: 2.5em;
-    text-align: left;
+
+    .h2-container {
+      margin: 0 1em 1em;
+      width: calc(100% - 2.2em);
+    }
+
+    h2 {
+      font-size: 2.5em;
+      text-align: left;
+    }
   }
 }
+
 @media (max-width: 400px) {
-  .brown-backgr h2 {
-    font-size: 1.5em;
+  .brown-backgr {
+    h2 {
+      font-size: 1.5em;
+    }
   }
 }
+*/
 @media (max-width: 1440px) {
   .footer {
     left: 0;
