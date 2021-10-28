@@ -1,7 +1,11 @@
+#order-body{
+  height: calc(100vh - 2px);
+}
+
 #order-main{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin-top: 4em;
-  padding: 0 .5%;
+  margin: 4em auto 0;
+  width: 98%;
 
   h2 {
     font-size: 3.5em;
@@ -45,12 +49,17 @@
 .items-cont{
   .item{
     display: grid;
-    grid-template-columns: 2.5fr 1fr;
+
 
     &:not(.total-cost){
+      grid-template-columns: 2.5fr 1fr;
       padding: 1em 0;
       border-bottom: 1px solid #E1CEC2;
     }
+  }
+
+  .total-cost{
+    grid-template-columns: 1fr 1.5fr;
   }
 
   .name-and-img{
@@ -83,14 +92,13 @@
   }
 }
 
-
-
 #order-footer{
   position: relative;
-  bottom: 0;
+  margin-top: -4em;
   height: 13em;
-
   .footer-section-container{
-    padding-top: 2em;
+    padding-top: 2.5em;
   }
 }
+
+
