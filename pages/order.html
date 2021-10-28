@@ -9,98 +9,124 @@
 </head>
 <body>
     <header>
-        <nav>
-          <menu class="navbar">
-            <a class="main-text" href="../index.html">
-              <img src="../img/setting_icon.png" alt="Tannhjól">
-              <h2 class="text">Tæknibúðin</h2>
-            </a>
-            <form action="" class="search-form">
-              <input type="search" name="" class="search-bar" placeholder="Leit eftir heiti, vörunúmeri, lýsingu o.fl.">
-              <img class="magnifying-glass-img" src="../img/magnifying_glass.png" alt="">
-            </form>
-            <div class="content">
-              <li><a href="productlist.html">Nýjar vörur</a></li>
-              <li><a href="productoffer.html">Tilboðs vörur</a></li>
-              <li><a href="allproducts.html">Allar vörur</a></li>
+      <nav>
+        <menu class="navbar">
+          <a class="main-text" href="../index.html">
+            <img src="../img/setting_icon.png" alt="Tannhjól">
+            <h2 class="text">Tæknibúðin</h2>
+          </a>
+          <form action="" class="search-form">
+            <input type="search" name="" class="search-bar" placeholder="Leit eftir heiti, vörunúmeri, lýsingu o.fl.">
+            <img class="magnifying-glass-img" src="../img/magnifying_glass.png" alt="">
+          </form>
+          <div class="content">
+            <li><a href="productlist.html">Nýjar vörur</a></li>
+            <li><a href="productoffer.html">Tilboðs vörur</a></li>
+            <li><a href="allproducts.html">Allar vörur</a></li>
+          </div>
+          <div class="cart-img">
+            <img src="../img/cart_icon.png" alt="Kerra">
+          </div>
+          <a class="hamburger" href="menu.html">
+            <img src="../img/hamburger.png" alt="Valmynd">
+          </a>
+        </menu>
+      </nav>
+    </header>
+    <main id="order-main">
+      <h2>Pöntun</h2>
+      <div class="grid-container">
+        <form class="order-form">
+          <legend>Kaupandi</legend>
+            <div class="input-grid">
+              <div>
+                  <label for="nafn">Nafn</label><br>
+                  <input type="text" name="nafn" id="nafn">
+              </div>
+              <div>
+                  <label for="kennitala">Kennitala</label><br>
+                  <input type="text" name="kennitala" id="kennitala">
+              </div>
+              <div>
+                  <label for="netfang">Netfang</label><br>
+                  <input type="text" name="netfang" id="netfang">
+              </div>
+              <div>
+                  <label for="sími">Sími</label><br>
+                  <input type="tel" name="sími" id="sími">
+              </div>
             </div>
-            <div class="cart-img">
-              <img src="../img/cart_icon.png" alt="Kerra">
-            </div>
-            <a class="hamburger" href="menu.html">
-              <img src="../img/hamburger.png" alt="Valmynd">
-            </a>
-          </menu>
-        </nav>
-      </header>
-    <p>Pöntun</p>
-    <form>
-        <legend>Kaupandi</legend>
-            <div>
-                <label for="nafn">Nafn</label>
-                <input type="text" name="nafn" id="nafn">
-            </div>
-            <div>
-                <label for="kennitala">Kennitala</label>
-                <input type="text" name="kennitala" id="kennitala">
-            </div>
-            <div>
-                <label for="netfang">Netfang</label>
-                <input type="text" name="netfang" id="netfang">
-            </div>
-            <div>
-                <label for="sími">Sími</label>
-                <input type="tel" name="sími" id="sími">
-            </div>
-            
-            
             <legend>Afhending</legend>
-            <div>
-                <label for="heimilisfang">Heimilisfang</label>
-                <input type="text" name="heimilisfang" id="heimilisfang">
+            <div class="input-grid">
+              <div>
+                  <label for="heimilisfang">Heimilisfang</label><br>
+                  <input type="text" name="heimilisfang" id="heimilisfang">
+              </div>
+              <div>
+                  <label for="Póstnúmer">Póstnúmer</label><br>
+                  <input type="text" name="Póstnúmer" id="Póstnúmer">
+              </div>
+              <div>
+                  <label for="Staður">Staður</label><br>
+                  <input type="text" name="Staður" id="Staður">
+              </div>
+              <div>
+                  <label for="Athugasemd">Athugasemd</label><br>
+                  <input type="text" name="Athugasemd" id="Athugasemd">
+              </div>
             </div>
-            <div>
-                <label for="Póstnúmer">Póstnúmer</label>
-                <input type="text" name="Póstnúmer" id="Póstnúmer">
+          <button>SENDA PÖNTUN</button>
+        </form>
+        <div class="items-cont">
+          <div class="item">
+            <div class="name-and-img">
+              <img src="../img/alex_knight.png" alt="Vinnuróbot">
+              <p>Vinalegur vinnuróbot</p>
             </div>
-            <div>
-                <label for="Staður">Staður</label>
-                <input type="text" name="Staður" id="Staður">
+            <p class="amount">1.499.990 kr.</p>
+          </div>
+          <div class="item">
+            <div class="name-and-img">
+              <img src="../img/motherboard.png" alt="Vinnuróbot">
+              <p>Tæknilegt móðurborð</p>
             </div>
-            <div>
-                <label for="Athugasemd">Athugasemd</label>
-                <input type="text" name="Athugasemd" id="Athugasemd">
-            </div>
-        <button>SENDA PÖNTUN</button>
-    </form>
-    <footer class="footer">
-        <div class="footer-section-container">
-          <section>
-            <h2>Opnunartími</h2>
-            <p>
-              Opið alla virka daga frá 9:00–18:00<br>
-              Opið á laugardögum frá 12:00–16:00<br>
-              Lokað á sunnudögum
-            </p>
-          </section>
-          <section>
-            <h2>Hafðu samband</h2>
-            <p>
-              Skiptiborð: 234–4568<br>
-              Tölvupóstur: thjonusta@example.org
-            </p>
-          </section>
-          <section>
-            <h2>Annað</h2>
-            <p>
-              Rekja sendingu<br>
-              Skilaréttur<br>
-              Um okkur<br>
-              Störf
-            </p>
-          </section>
+            <p class="amount">189.000 kr.</p>
+          </div>
+          <div class="total-cost item">
+            <p class="total">Samtals</p>
+            <p class="amount">1.688.990 kr.</p>
+          </div>
         </div>
-        <p class="footer-bottom-text">© 2021 TÆKNIBÚÐIN — Allur réttur áskilinn</p>
-      </footer>
-</body>
+      </div>
+    </main>
+    <footer class="footer" id="order-footer">
+      <div class="footer-section-container">
+        <section>
+          <h2>Opnunartími</h2>
+          <p>
+            Opið alla virka daga frá 9:00–18:00<br>
+            Opið á laugardögum frá 12:00–16:00<br>
+            Lokað á sunnudögum
+          </p>
+        </section>
+        <section>
+          <h2>Hafðu samband</h2>
+          <p>
+            Skiptiborð: 234–4568<br>
+            Tölvupóstur: thjonusta@example.org
+          </p>
+        </section>
+        <section>
+          <h2>Annað</h2>
+          <p>
+            Rekja sendingu<br>
+            Skilaréttur<br>
+            Um okkur<br>
+            Störf
+          </p>
+        </section>
+      </div>
+      <p class="footer-bottom-text">© 2021 TÆKNIBÚÐIN — Allur réttur áskilinn</p>
+    </footer>
+  </body>
 </html>

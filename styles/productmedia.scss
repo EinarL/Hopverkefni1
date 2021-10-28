@@ -2,6 +2,7 @@
   .about-container{
     grid-template-columns: 1fr;
     width: 95%;
+    margin: 3em auto 0;
 
     img{
       height: auto;
@@ -20,23 +21,11 @@
   }
 }
 
-@media (max-width: 1100px){
-  .about-container{
-    margin-top: -20em;
-  }
-}
-
 @media (max-width: 800px){
   .background-brown{
     .grid{
       grid-template-columns: 1fr 1fr;
     }
-  }
-}
-
-@media (max-width: 700px){
-  .about-container{
-    margin-top: -15em;
   }
 }
 
