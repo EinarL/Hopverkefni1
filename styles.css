@@ -1,5 +1,6 @@
 @charset "UTF-8";
 * {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -169,9 +170,17 @@ input [type=search]::-webkit-search-cancel-button {
   width: 20px;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+}
+
 .container {
   display: grid;
   gap: 2em;
+  grid-template-columns: repeat(1, 1fr);
+  height: fit-content;
+  margin: 1em;
 }
 .container div {
   align-content: space-between;
@@ -179,28 +188,46 @@ input [type=search]::-webkit-search-cancel-button {
   gap: 1.5em;
   grid-area: Q;
 }
+.container h2 {
+  font-size: 36px;
+  font-weight: 450;
+}
+.container strong {
+  font-weight: 600;
+}
+.container p {
+  font-size: 20px;
+}
 .container img {
+  align-self: center;
   grid-area: P;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
 }
 .container button {
+  background-color: #6F4E37;
+  border: 1px solid #3C2A1E;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 550;
+  height: 44px;
+  text-transform: uppercase;
+  width: 177px;
   justify-self: center;
+}
+.container button:hover {
+  cursor: pointer;
 }
 
 .grid-content {
   display: grid;
   gap: 2em;
-}
-.grid-content .grid-area-a {
-  grid-area: A;
-}
-.grid-content .grid-area-b {
-  grid-area: B;
-}
-.grid-content .grid-area-c {
-  grid-area: C;
-}
-.grid-content .grid-area-d {
-  grid-area: D;
+  grid-template-columns: repeat(1, 1fr);
+  height: fit-content;
+  margin: 1em;
 }
 
 .container-areas1 {
@@ -209,13 +236,6 @@ input [type=search]::-webkit-search-cancel-button {
 
 .container-areas2 {
   grid-template-areas: "P" "Q";
-}
-
-.grid-content {
-  grid-template-areas: "A" "B" "C" "D";
-  grid-template-columns: repeat(1, 1fr);
-  height: fit-content;
-  margin: 1em;
 }
 
 .main-page-ad {
@@ -240,7 +260,6 @@ input [type=search]::-webkit-search-cancel-button {
   color: #000;
   display: flex;
   flex-direction: column;
-  font-family: Lato;
   font-style: normal;
   height: 100%;
   justify-content: center;
@@ -252,7 +271,6 @@ input [type=search]::-webkit-search-cancel-button {
   margin-bottom: clamp(2.5rem, 8vw, 4.5rem);
   position: absolute;
   text-align: center;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .main-page-ad .smaller-text {
   font-size: clamp(30px, 5vw, 36px);
@@ -260,17 +278,10 @@ input [type=search]::-webkit-search-cancel-button {
   margin-top: clamp(5rem, 12vw, 10rem);
   position: absolute;
   text-align: center;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-
-main {
-  display: flex;
-  flex-direction: column;
 }
 
 .brown-backgr {
   background-color: #e1cec2;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   height: fit-content;
   padding-bottom: 1em;
   position: relative;
@@ -328,51 +339,7 @@ main {
   cursor: pointer;
 }
 
-/* --------------------------------------------------------------------
-/Þægilegt að hafa media frá 0 í stað að sleppa því vegna sér svæðis
-/fyrir grid að ofan.
-/------------------------------------------------------------------- */
-@media (min-width: 0) {
-  .container {
-    grid-template-columns: repeat(1, 1fr);
-    height: fit-content;
-    margin: 1em;
-  }
-  .container h2 {
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 36px;
-    font-weight: 450;
-  }
-  .container strong {
-    font-weight: 600;
-  }
-  .container p {
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 20px;
-  }
-  .container button {
-    background-color: #6F4E37;
-    border: 1px solid #3C2A1E;
-    border-radius: 5px;
-    box-sizing: border-box;
-    color: #FFFFFF;
-    font-size: 14px;
-    font-weight: 550;
-    height: 44px;
-    text-transform: uppercase;
-    width: 177px;
-  }
-  .container button:hover {
-    cursor: pointer;
-  }
-  .container img {
-    align-self: center;
-    height: 100%;
-    object-fit: cover;
-    width: 100%;
-  }
-}
-@media (min-width: 700px) {
+@media (min-width: 600px) {
   .container {
     grid-template-columns: repeat(12, 1fr);
     margin: 2em 1em;
@@ -390,8 +357,7 @@ main {
   }
 
   .grid-content {
-    grid-template-areas: "A A A A A A B B B B B B" "C C C C C C D D D D D D";
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     margin: 0 1em;
   }
 
@@ -411,8 +377,12 @@ main {
   .container-areas2 {
     grid-template-areas: "- P P P P P Q Q Q Q Q";
   }
+
+  .grid-content {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
-@media (min-width: 1100px) {
+@media (min-width: 1200px) {
   .container {
     margin: 7em 1em;
   }
@@ -426,7 +396,7 @@ main {
   }
 
   .grid-content {
-    grid-template-areas: "A A A B B B C C C D D D";
+    grid-template-columns: repeat(4, 1fr);
   }
 
   .main-page-ad {
