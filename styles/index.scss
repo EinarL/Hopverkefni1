@@ -1,7 +1,14 @@
-//Allur grunnur í griddinu
+main {
+  display: flex;
+  flex-direction: column;
+}
+
 .container {
   display: grid;
   gap: 2em;
+  grid-template-columns: repeat(1, 1fr);
+  height: fit-content;
+  margin: 1em;
 
   div {
     align-content: space-between;
@@ -10,11 +17,30 @@
     grid-area: Q;
   }
 
+  h2 {
+    font-size: 36px;
+    font-weight: 450;
+  }
+
+  strong {
+    font-weight: 600;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
   img {
+    align-self: center;
     grid-area: P;
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
   }
 
   button {
+    @include buttonStyle(#6F4E37,#FFFFFF,#3C2A1E,177px);
+
     justify-self: center;
   }
 }
@@ -22,22 +48,9 @@
 .grid-content {
   display: grid;
   gap: 2em;
-
-  .grid-area-a {
-    grid-area: A;
-  }
-
-  .grid-area-b {
-    grid-area: B;
-  }
-
-  .grid-area-c {
-    grid-area: C;
-  }
-
-  .grid-area-d {
-    grid-area: D;
-  }
+  grid-template-columns: repeat(1, 1fr);
+  height: fit-content;
+  margin: 1em;
 }
 
 .container-areas1 {
@@ -46,13 +59,6 @@
 
 .container-areas2 {
   grid-template-areas: 'P' 'Q';
-}
-
-.grid-content {
-  grid-template-areas: 'A' 'B' 'C' 'D';
-  grid-template-columns: repeat(1, 1fr);
-  height: fit-content;
-  margin: 1em;
 }
 
 .main-page-ad {
@@ -78,7 +84,6 @@
     color: #000;
     display: flex;
     flex-direction: column;
-    font-family: Lato;
     font-style: normal;
     height: 100%;
     justify-content: center;
@@ -91,7 +96,6 @@
     margin-bottom: clamp(2.5rem, 8vw, 4.5rem);
     position: absolute;
     text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
 
   .smaller-text {
@@ -100,18 +104,11 @@
     margin-top: clamp(5rem, 12vw, 10rem);
     position: absolute;
     text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
-}
-
-main {
-  display: flex;
-  flex-direction: column;
 }
 
 .brown-backgr {
   background-color: #e1cec2;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   height: fit-content;
   padding-bottom: 1em;
   position: relative;
@@ -159,47 +156,8 @@ main {
   }
 }
 
-
-/* --------------------------------------------------------------------
-/Þægilegt að hafa media frá 0 í stað að sleppa því vegna sér svæðis
-/fyrir grid að ofan.
-/------------------------------------------------------------------- */
-@media (min-width: 0) {
-  .container {
-    grid-template-columns: repeat(1, 1fr);
-    height: fit-content;
-    margin: 1em;
-
-    h2 {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      font-size: 36px;
-      font-weight: 450;
-    }
-
-    strong {
-      font-weight: 600;
-    }
-
-    p {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      font-size: 20px;
-    }
-
-    button {
-      @include buttonStyle(#6F4E37,#FFFFFF,#3C2A1E,177px);
-    }
-
-    img {
-      align-self: center;
-      height: 100%;
-      object-fit: cover;
-      width: 100%;
-    }
-  }
-}
-
-  //---------------------------------------------------------------------
-@media (min-width: 700px) {
+//---------------------------------------------------------------------
+@media (min-width: 600px) {
   .container {
     grid-template-columns: repeat(12, 1fr);
     margin: 2em 1em;
@@ -218,8 +176,7 @@ main {
   }
 
   .grid-content {
-    grid-template-areas: 'A A A A A A B B B B B B' 'C C C C C C D D D D D D';
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     margin: 0 1em;
   }
 
@@ -241,10 +198,14 @@ main {
   .container-areas2 {
     grid-template-areas: '- P P P P P Q Q Q Q Q';
   }
+
+  .grid-content {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 //---------------------------------------------------------------------
-@media (min-width: 1100px) {
+@media (min-width: 1200px) {
   .container {
     margin: 7em 1em;
   }
@@ -258,7 +219,7 @@ main {
   }
 
   .grid-content {
-    grid-template-areas: 'A A A B B B C C C D D D';
+    grid-template-columns: repeat(4, 1fr);
   }
 
   .main-page-ad {
