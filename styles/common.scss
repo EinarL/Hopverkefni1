@@ -101,6 +101,28 @@ input [type='search']::-webkit-search-cancel-button {
   }
 }
 
+.brown-dot-container{
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  img{
+    position: absolute;
+    bottom:-2px;
+    left:-30px;
+    width: 18px;
+    height: 18px;
+
+  }
+
+  p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute;
+    left: -26px;
+    color: #FFF;
+    top: -19px;
+  }
+}
+
 .footer {
   background-color: #3c2a1e;
   color: #fff;
