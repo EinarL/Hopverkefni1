@@ -9,6 +9,9 @@
   }
 }
 
+
+
+
 @media (max-width: 900px){
 
   #order-main{
@@ -36,7 +39,7 @@
 @media (max-width: 700px){
 
   #order-footer{
-    height: 57%;
+    height: 30em;
   }
 
 }
@@ -49,6 +52,12 @@
 
     input{
       width: 100%;
+    }
+  }
+
+  .items-cont{
+    .item:not(.total-cost){
+      grid-template-columns: 1fr 1.7fr;
     }
   }
 }
