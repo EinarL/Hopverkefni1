@@ -773,6 +773,7 @@ main {
 .about-container .cost {
   font-weight: 500;
   margin: auto 0;
+  font-size: 1.25em;
 }
 .about-container .add-to-cart {
   background-color: #FEFEFE;
@@ -899,6 +900,10 @@ main {
 @media (max-width: 550px) {
   .background-brown .grid {
     grid-template-columns: 1fr;
+  }
+
+  .second-cont h2 {
+    font-size: 9vw;
   }
 }
 @media (max-width: 440px) {
