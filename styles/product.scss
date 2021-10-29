@@ -1,3 +1,11 @@
+.tag-flex {
+  display: flex;
+
+  p {
+    @include tagStyle(14px, 0.8em);
+  }
+}
+
 .about-container {
   display: grid;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -41,9 +49,9 @@
   }
 
   .cost {
+    font-size: 1.25em;
     font-weight: 500;
     margin: auto 0;
-    font-size: 1.25em;
   }
 
   .add-to-cart {
@@ -89,7 +97,7 @@
   .grid {
     display: grid;
     gap: 2em;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     padding-bottom: 2em;
   }
 
@@ -111,14 +119,6 @@
     font-size: 22px;
   }
 
-  .tag-flex {
-    display: flex;
-
-    & > * {
-      @include tagStyle(14px,0.8em);
-    }
-  }
-
   img {
     height: 10em;
     object-fit: cover;
@@ -127,5 +127,65 @@
 
   button {
     @include buttonStyle(#FEFEFE,#3C2A1E,#6F4E37,100%);
+  }
+}
+//-------------------------------------------------------------------
+
+@media (max-width: 440px) {
+  .about-container {
+    .add-to-cart {
+      @include buttonStyle(#FEFEFE,#3C2A1E,#6F4E37,100%);
+
+      float: none;
+    }
+  }
+
+  .properties-container {
+    width: 95%;
+  }
+}
+//-------------------------------------------------------------------
+
+@media (max-width: 550px) {
+  .second-cont {
+    h2 {
+      font-size: 9vw;
+    }
+  }
+}
+//-------------------------------------------------------------------
+
+@media (max-width: 1120px) {
+  .about-container {
+    grid-template-columns: 1fr;
+    margin: 3em auto 0;
+    width: 95%;
+
+    img {
+      height: auto;
+    }
+
+    .add-to-cart {
+      float: right;
+    }
+  }
+}
+
+//-------------------------------------------------------------------
+
+@media (min-width: 600px) {
+  .background-brown {
+    .grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+//-------------------------------------------------------------------
+
+@media (min-width: 1200px) {
+  .background-brown {
+    .grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
   }
 }
