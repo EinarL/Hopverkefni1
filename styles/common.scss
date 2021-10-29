@@ -124,6 +124,12 @@ input [type='search']::-webkit-search-cancel-button {
   }
 }
 
+.to-products-link{ // margin fyrir dálkana
+  img, .item-main-text, .tag-flex, .amount{
+    margin-bottom: .3em;
+  }
+}
+
 .footer {
   background-color: #3c2a1e;
   color: #fff;
