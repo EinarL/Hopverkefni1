@@ -8,7 +8,6 @@
 
 .about-container {
   display: grid;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   gap: 2%;
   grid-template-columns: 1fr 1fr;
   margin-top: 5em;
@@ -60,7 +59,6 @@
 }
 
 .properties-container {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 2em auto;
   width: 70%;
 
@@ -85,7 +83,6 @@
 
 .background-brown {
   background-color: #e1cec2;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding: 0 1em;
 
   h4 {
