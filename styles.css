@@ -381,10 +381,6 @@ main {
   .container-areas2 {
     grid-template-areas: "- P P P P P Q Q Q Q Q";
   }
-
-  .grid-content {
-    grid-template-columns: repeat(2, 1fr);
-  }
 }
 @media (min-width: 1200px) {
   .container {
