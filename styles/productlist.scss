@@ -2,7 +2,13 @@
   display: flex;
 
   p {
-    @include tagStyle(14px,0.8em);
+    background: #e1cec2;
+    border: 0;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-right: 0.8em;
+    padding: 0.5em;
   }
 }
 
@@ -30,9 +36,14 @@
 }
 
 .tag-container {
-  @include tagStyle(20px,0.4em);
-
+  background: #e1cec2;
+  border: 0;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 500;
   margin-bottom: 0.5em;
+  margin-right: 0.4em;
+  padding: 0.5em;
 
   :hover {
     cursor: pointer;
@@ -73,7 +84,10 @@
   }
 
   button {
-    @include buttonStyle(#FEFEFE,#3C2A1E,#6F4E37,100%);
+    background-color: #fefefe;
+    border: 1px solid #6f4e37;
+    color: #3c2a1e;
+    width: 100%;
   }
 }
 

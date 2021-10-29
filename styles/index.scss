@@ -39,16 +39,18 @@ main {
   }
 
   button {
-    @include buttonStyle(#6F4E37,#FFFFFF,#3C2A1E,177px);
-
+    background-color: #6f4e37;
+    border: 1px solid #3c2a1e;
+    color: #fff;
     justify-self: center;
+    width: 177px;
   }
 }
 
 .grid-content {
   display: grid;
   gap: 2em;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: 1fr;
   height: fit-content;
   margin: 1em;
 }
@@ -148,11 +150,20 @@ main {
   }
 
   .tag-flex > p {
-    @include tagStyle(14px,0.8em);
+    background: #e1cec2;
+    border: 0;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-right: 0.8em;
+    padding: 0.5em;
   }
 
   button {
-    @include buttonStyle(#FEFEFE,#3C2A1E,#6F4E37,100%);
+    background-color: #fefefe;
+    border: 1px solid #6f4e37;
+    color: #3c2a1e;
+    width: 100%;
   }
 }
 
