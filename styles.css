@@ -41,9 +41,6 @@ input [type=search]::-webkit-search-cancel-button {
   width: min(100% - 1em, 1440px);
   z-index: 1;
 }
-.navbar li {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
 .navbar .main-text {
   display: flex;
   padding-left: 0.5em;
@@ -92,33 +89,34 @@ input [type=search]::-webkit-search-cancel-button {
 }
 
 .brown-dot-container {
+  bottom: 0;
   position: absolute;
   z-index: 1;
-  bottom: 0;
 }
 .brown-dot-container img {
-  position: absolute;
   bottom: -2px;
-  left: -30px;
-  width: 18px;
   height: 18px;
+  left: -30px;
+  position: absolute;
+  width: 18px;
 }
 .brown-dot-container p {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  position: absolute;
+  color: #fff;
   left: -26px;
-  color: #FFF;
+  position: absolute;
   top: -19px;
 }
 
-.to-products-link img, .to-products-link .item-main-text, .to-products-link .tag-flex, .to-products-link .amount {
+.to-products-link img,
+.to-products-link .item-main-text,
+.to-products-link .tag-flex,
+.to-products-link .amount {
   margin-bottom: 0.3em;
 }
 
 .footer {
   background-color: #3c2a1e;
   color: #fff;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   height: 18em;
   left: calc(100% - 1440px - (100% - 1440px) / 2 + 1px);
   margin-top: -5em;
@@ -149,6 +147,62 @@ input [type=search]::-webkit-search-cancel-button {
   width: 70%;
 }
 
+@media (max-width: 1440px) {
+  .footer {
+    left: 0;
+    right: 0;
+  }
+}
+@media (min-width: 1081px) {
+  .navbar .hamburger {
+    display: none;
+  }
+}
+@media (max-width: 1080px) {
+  .navbar {
+    grid-template-columns: minmax(270px, 2fr) 1fr 1fr 25px 25px;
+  }
+  .navbar .content {
+    display: none;
+  }
+  .navbar .cart-img > * {
+    bottom: 0;
+    position: absolute;
+    right: 40px;
+  }
+  .navbar .hamburger {
+    bottom: 2px;
+    position: absolute;
+    right: 0;
+  }
+}
+@media (max-width: 775px) {
+  .navbar .search-form {
+    display: none;
+  }
+  .navbar .text {
+    /* Tæknibúðin textinn */
+    font-size: 1.8em;
+    margin-left: 1.4em;
+  }
+}
+@media (max-width: 700px) {
+  .footer {
+    height: 27em;
+    margin-top: -7em;
+    position: relative;
+  }
+  .footer .footer-section-container {
+    grid-template-columns: 1fr;
+  }
+  .footer section {
+    margin: 1em 0 -1em;
+  }
+  .footer .footer-bottom-text {
+    margin-left: -50%;
+    width: 100%;
+  }
+}
 .list-container {
   display: grid;
   gap: 1em;
@@ -413,62 +467,6 @@ main {
     margin: 0;
     position: absolute;
     top: 5rem;
-  }
-}
-@media (max-width: 1440px) {
-  .footer {
-    left: 0;
-    right: 0;
-  }
-}
-@media (min-width: 1081px) {
-  .navbar .hamburger {
-    display: none;
-  }
-}
-@media (max-width: 1080px) {
-  .navbar {
-    grid-template-columns: minmax(270px, 2fr) 1fr 1fr 25px 25px;
-  }
-  .navbar .content {
-    display: none;
-  }
-  .navbar .cart-img > * {
-    bottom: 0;
-    position: absolute;
-    right: 40px;
-  }
-  .navbar .hamburger {
-    bottom: 2px;
-    position: absolute;
-    right: 0;
-  }
-}
-@media (max-width: 775px) {
-  .navbar .search-form {
-    display: none;
-  }
-  .navbar .text {
-    /* Tæknibúðin textinn */
-    font-size: 1.8em;
-    margin-left: 1.4em;
-  }
-}
-@media (max-width: 700px) {
-  .footer {
-    height: 27em;
-    margin-top: -7em;
-    position: relative;
-  }
-  .footer .footer-section-container {
-    grid-template-columns: 1fr;
-  }
-  .footer section {
-    margin: 1em 0 -1em;
-  }
-  .footer .footer-bottom-text {
-    margin-left: -50%;
-    width: 100%;
   }
 }
 #order-body {
