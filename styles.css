@@ -15,6 +15,19 @@ body {
   max-width: 1440px;
 }
 
+button:not(.tag-container) {
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-weight: 550;
+  height: 44px;
+  text-transform: uppercase;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
 img {
   object-fit: contain;
 }
@@ -263,26 +276,17 @@ main {
   width: 100%;
 }
 .container button {
-  background-color: #6F4E37;
-  border: 1px solid #3C2A1E;
-  border-radius: 5px;
-  box-sizing: border-box;
-  color: #FFFFFF;
-  font-size: 14px;
-  font-weight: 550;
-  height: 44px;
-  text-transform: uppercase;
-  width: 177px;
+  background-color: #6f4e37;
+  border: 1px solid #3c2a1e;
+  color: #fff;
   justify-self: center;
-}
-.container button:hover {
-  cursor: pointer;
+  width: 177px;
 }
 
 .grid-content {
   display: grid;
   gap: 2em;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: 1fr;
   height: fit-content;
   margin: 1em;
 }
@@ -380,19 +384,10 @@ main {
   padding: 0.5em;
 }
 .brown-backgr button {
-  background-color: #FEFEFE;
-  border: 1px solid #6F4E37;
-  border-radius: 5px;
-  box-sizing: border-box;
-  color: #3C2A1E;
-  font-size: 14px;
-  font-weight: 550;
-  height: 44px;
-  text-transform: uppercase;
+  background-color: #fefefe;
+  border: 1px solid #6f4e37;
+  color: #3c2a1e;
   width: 100%;
-}
-.brown-backgr button:hover {
-  cursor: pointer;
 }
 
 @media (min-width: 600px) {
@@ -505,20 +500,11 @@ main {
   font-size: 1.3em;
 }
 .order-form button {
-  background-color: #6F4E37;
-  border: 1px solid #3C2A1E;
-  border-radius: 5px;
-  box-sizing: border-box;
-  color: #FFFFFF;
-  font-size: 14px;
-  font-weight: 550;
-  height: 44px;
-  text-transform: uppercase;
-  width: 177px;
+  background-color: #6f4e37;
+  border: 1px solid #3c2a1e;
+  color: #fff;
   margin-top: 1em;
-}
-.order-form button:hover {
-  cursor: pointer;
+  width: 177px;
 }
 
 .items-cont .total-cost {
@@ -652,9 +638,9 @@ main {
   border-radius: 5px;
   font-size: 20px;
   font-weight: 500;
+  margin-bottom: 0.5em;
   margin-right: 0.4em;
   padding: 0.5em;
-  margin-bottom: 0.5em;
 }
 .tag-container :hover {
   cursor: pointer;
@@ -689,19 +675,10 @@ main {
   width: 100%;
 }
 .backgr-brown button {
-  background-color: #FEFEFE;
-  border: 1px solid #6F4E37;
-  border-radius: 5px;
-  box-sizing: border-box;
-  color: #3C2A1E;
-  font-size: 14px;
-  font-weight: 550;
-  height: 44px;
-  text-transform: uppercase;
+  background-color: #fefefe;
+  border: 1px solid #6f4e37;
+  color: #3c2a1e;
   width: 100%;
-}
-.backgr-brown button:hover {
-  cursor: pointer;
 }
 
 @media (min-width: 600px) {
@@ -777,19 +754,10 @@ main {
   margin: auto 0;
 }
 .about-container .add-to-cart {
-  background-color: #FEFEFE;
-  border: 1px solid #6F4E37;
-  border-radius: 5px;
-  box-sizing: border-box;
-  color: #3C2A1E;
-  font-size: 14px;
-  font-weight: 550;
-  height: 44px;
-  text-transform: uppercase;
+  background-color: #fefefe;
+  border: 1px solid #6f4e37;
+  color: #3c2a1e;
   width: 330px;
-}
-.about-container .add-to-cart:hover {
-  cursor: pointer;
 }
 
 .properties-container {
@@ -823,7 +791,7 @@ main {
 .background-brown .grid {
   display: grid;
   gap: 2em;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: 1fr;
   padding-bottom: 2em;
 }
 .background-brown section {
@@ -846,37 +814,19 @@ main {
   width: 100%;
 }
 .background-brown button {
-  background-color: #FEFEFE;
-  border: 1px solid #6F4E37;
-  border-radius: 5px;
-  box-sizing: border-box;
-  color: #3C2A1E;
-  font-size: 14px;
-  font-weight: 550;
-  height: 44px;
-  text-transform: uppercase;
+  background-color: #fefefe;
+  border: 1px solid #6f4e37;
+  color: #3c2a1e;
   width: 100%;
-}
-.background-brown button:hover {
-  cursor: pointer;
 }
 
 @media (max-width: 440px) {
   .about-container .add-to-cart {
-    background-color: #FEFEFE;
-    border: 1px solid #6F4E37;
-    border-radius: 5px;
-    box-sizing: border-box;
-    color: #3C2A1E;
-    font-size: 14px;
-    font-weight: 550;
-    height: 44px;
-    text-transform: uppercase;
-    width: 100%;
+    background-color: #fefefe;
+    border: 1px solid #6f4e37;
+    color: #3c2a1e;
     float: none;
-  }
-  .about-container .add-to-cart:hover {
-    cursor: pointer;
+    width: 100%;
   }
 
   .properties-container {

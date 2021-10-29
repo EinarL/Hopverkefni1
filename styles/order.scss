@@ -43,9 +43,11 @@
   }
 
   button {
-    @include buttonStyle(#6F4E37,#FFFFFF,#3C2A1E,177px);
-
+    background-color: #6f4e37;
+    border: 1px solid #3c2a1e;
+    color: #fff;
     margin-top: 1em;
+    width: 177px;
   }
 }
 
