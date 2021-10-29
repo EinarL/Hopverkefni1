@@ -111,6 +111,10 @@ input [type=search]::-webkit-search-cancel-button {
   top: -19px;
 }
 
+.to-products-link img, .to-products-link .item-main-text, .to-products-link .tag-flex, .to-products-link .amount {
+  margin-bottom: 0.3em;
+}
+
 .footer {
   background-color: #3c2a1e;
   color: #fff;
@@ -379,7 +383,7 @@ main {
   }
 
   .grid-content {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (min-width: 1200px) {
